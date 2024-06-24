@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Navbar Example</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-d+eAk5b29LGA+BtH78E1s44vKmzvvBtIO09iNU9lhReZX8zAyzPcRgk5z5x0JfLwT4HQ1f6EdnqjT7hEZtBI1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://aitglobalinc.com/wp-content/uploads/2023/08/Asset-4.png"
+            alt="Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-cu">
+            <li class="nav-item">
+              <a
+                class="nav-link active custom-nav-link"
+                aria-current="page"
+                href="#home"
+                data-target="home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#form" data-target="form">Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#table" data-target="table">Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#website" data-target="website">AIT WEBSITE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Home -->
+    <div class="container content-section active" id="home">
+      <div class="row ">
+        <div class="col-md-6">
+          <img
+            src="https://aitglobalindia.com/wp-content/uploads/2023/04/AI-AUTOMATION.jpg"
+            class="img-fluid imgedit"
+            alt="Article Image"
+          />
+        </div>
+        <div class="col-md-6 ">
+          <h2>About AIT</h2>
+          <p>
+            AIT India is a Global IT Services Provider driven by customer
+            obsessed business leaders to develop sophisticated as well as
+            simplistically innovative technology solutions that bring an
+            organization’s Strategic Vision of tomorrow to reality - Today.
+          </p>
+
+          <p>
+            What makes the organization unique is its focus on fully
+            comprehending, client’s business objectives in order to deliver
+            customized solutions and services that help sustain a competitive
+            edge and long-term business relationships. Services such as Apps
+            Development & Cloud Services, Mobile Apps, DevOps / Agile,
+            Contextualized Business Intelligence & Analytics, Quality Assurance,
+            Performance Engineering, Customized Product Development, Digital
+            Content Management Services, Human Resource Consulting Management &
+            Professional Services are some of the aspects that AIT Global covers
+            under its Portfolio.
+          </p>
+
+          <h2>Specialties</h2>
+          <p>
+            Product Development and Support, Applications Development & Support,
+            Custom BI Development, Data Quality and testing, UI/UX Development,
+            Digital Content Management Services, Mobile technologies
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- form -->
+    <div class="container content-section col-md-6" id="form"">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="form-container">
+              <h2 class="text-center mb-4">Bootstrap Form Example</h2>
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="bio">Bio</label>
+                  <textarea
+                    class="form-control"
+                    id="bio"
+                    rows="3"
+                    placeholder="Tell us about yourself"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select class="form-control" id="gender" required>
+                    <option value="">Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="termsCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="termsCheck">
+                      Agree to terms and conditions
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label>Choose your favorite programming language</label>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="programmingLanguage"
+                      id="radioPython"
+                      value="python"
+                    />
+                    <label class="form-check-label" for="radioPython">
+                      Python
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="programmingLanguage"
+                      id="radioJavascript"
+                      value="javascript"
+                    />
+                    <label class="form-check-label" for="radioJavascript">
+                      JavaScript
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="programmingLanguage"
+                      id="radioJava"
+                      value="java"
+                    />
+                    <label class="form-check-label" for="radioJava">
+                      Java
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- table -->
+      <div class="container content-section" id="table">
+        <h2 class="text-center">User List</h2>
+        <table class="table table-striped table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Age</th>
+              <th scope="col">Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Aditya</td>
+              <td>aditya@gmail.com</td>
+              <td>30</td>
+              <td>India</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Mehul</td>
+              <td>mehul@gmail.com</td>
+              <td>25</td>
+              <td>India</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Rahul</td>
+              <td>rahul@gmail.com</td>
+              <td>35</td>
+              <td>India</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Aditi</td>
+              <td>aditi@gmail.com</td>
+              <td>28</td>
+              <td>India</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Vivek</td>
+              <td>vivek@gmail.com</td>
+              <td>25</td>
+              <td>India</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Akash</td>
+              <td>Akash@gmail.com</td>
+              <td>30</td>
+              <td>India</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- AIT Website -->
+      <div class="container content-section" id="website"">
+        <h2>AIT Global India</h2>
+        <iframe src="https://www.aitglobalindia.com/" width="100%" height="600" frameborder="0"></iframe>
+      </div>
+
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content text-center">
+            <div class="container col-md-6">
+                <h1 class="mb-2">AIT Global India</h1>
+                <p class="footerPara">Follow Us On</p>
+    
+                <ul class="list-inline col-md-12">
+                    <li class="list-inline-item socialLink"><a href="https://www.linkedin.com/company/aitglobalindia/posts/?feedView=all" target="_blank">LinkedIn</a></li>
+                    <li class="list-inline-item socialLink"><a href="https://www.instagram.com/aitglobalindia/" target="_blank">Instagram</a></li>
+                    <li class="list-inline-item socialLink"><a href="https://x.com/AITGlobalIndia" target="_blank">X</a></li>
+                </ul>
+            </div>
+    
+            <div class="logo-container">
+                <a class="nav-link custom-nav-link">
+                    <img src="https://aitglobalindia.com/wp-content/uploads/2019/07/cropped-AIT-indiaLogo-file-180x180.png" alt="Logo" />
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('data-target');
+          document.querySelectorAll('.content-section').forEach(section => {
+            section.classList.remove('active');
+          });
+          document.getElementById(targetId).classList.add('active');
+        });
+      });
+    </script>
+  </body>
+</html>
